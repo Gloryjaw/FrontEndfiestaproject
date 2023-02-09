@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+li{
+    list-style: none;
+}
+#logo{
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
+nav figcaption{
+    align-self: center;
+    font-size: 1.1rem;
+   
+}
+
+.d-flex{
+    display: flex;
+}
+nav{
+    padding: 1em;
+    justify-content: space-between;
+    background-color: rgba(23, 15, 30);
+}
+.nav_list{
+    width: 50%;
+    justify-content: space-evenly;
+}
+.nav_list a{
+    color: rgb(180, 255, 57);
+    font-size: 1.1rem;
+}
+nav figure{
+    width: 8%;
+    justify-content: space-between;
+}
+
+.Home{
+    width: 100%;
+    padding: 4.5em;
+    text-align: center;
+    font-size: 3rem;
+
+    position: relative;
+   
+ 
+   
+    
+}
+.Home::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: -1;
+    background-image: url(./img/background-img-home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+
+}
+.Home::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: -2;
+    background-color: black;
+
+}
+.About{
+    background-color: rgba(23, 15, 30);
+    
+
+}
+.About>*{
+    color: rgb(180, 255, 57);
+}
+.About h2{
+    text-align: center;
+    padding: 2em 0;
+    font-size: 2rem;
+    font-style: italic;
+}
+.About div{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2em;
+    
+}
+.About>div>p{
+    width: 50%;
+    text-align: center;
+    align-self: center;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+}
+.About img{
+    width: 40%;
+    border-radius: 50px;
+}
+footer{
+    background-color: rgba(23, 15, 30);
+}
+footer h2{
+    text-align: center;
+    padding: 1em 0;
+    font-style: italic;
+    font-size: 2rem;
+    color: rgb(180, 255, 57);
+}
+#email{
+    display: flex;
+    width: 15%;
+    margin:auto;
+
+    justify-content: space-between;
+
+}
+#email p{
+    align-self: center;
+}
+#email img{
+    filter: invert(100%);
+    width: 30px;
+    height: 30px;
+}
+#social-media img{
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
+#social-media{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding: 4em;
+    justify-content: space-between;
+}
+#social-media div{
+    display: flex;
+    width: 15%;
+    justify-content: space-evenly;
+}
+#social-media div p{
+    align-self: center;
+}
+@media(max-width:716px){
+    .About div{
+        display: block;
+        width: 100%;
+    }
+    .About>div>img{
+        width: 60%;
+        margin: auto;
+        display: block;
+    }
+    .About>div>p{
+        width: 100%;
+    }
+}
